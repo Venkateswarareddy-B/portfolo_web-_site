@@ -127,7 +127,7 @@ function initReveal() {
   });
 
   // Contact
-  document.querySelectorAll('.contact-info, .contact-form').forEach(el => {
+  document.querySelectorAll('.contact-info, .contact-form-wrapper').forEach(el => {
     el.classList.add('reveal');
     revealObserver.observe(el);
   });
@@ -196,7 +196,7 @@ function typedEffect() {
   style.textContent = `@keyframes cursorBlink { 0%,100% { border-color: var(--secondary); } 50% { border-color: transparent; } }`;
   document.head.appendChild(style);
 
-  greeting.textContent = '👋 Hello, I\'m — ';
+  greeting.textContent = '\u{1F44B} Hello, I\'m \u2014 ';
   greeting.appendChild(typingEl);
 
   function type() {
